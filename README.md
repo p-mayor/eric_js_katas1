@@ -1,4 +1,8 @@
-#Additional JS challenges for practice. NOT REQUIRED TO BE SUBMITTED. If you do submit, I will grade them and provide feedback but this lesson will not show up on your progress report.
+- Create a directory with an index.html file and a main.js file. 
+- Add the boilerplate html5 to the index.html file. 
+- Link the main.js file to your index.htlm with a script tag.
+- Write the following functions in the main.js file
+- Use console.log() to display the results
 
 ## `01 | sum`
 
@@ -8,6 +12,8 @@ Write a function called `sum` that takes two parameters and returns the sum of t
 sum(5, 9); // return 14
 sum(5, 4); // return 9
 ```
+
+Note: to test this, use `console.log(sum(5,9))` then open your index.html file in your browser and check the console.
 
 ## `02 | avg`
 
