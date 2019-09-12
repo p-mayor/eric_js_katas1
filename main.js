@@ -74,13 +74,13 @@ console.log(
 ); // returns 'heathcliff'
 
 function weave(str, n) {
-    let strArray = str.split('')
-    for (let i = n-1; i < str.length; i+=n){
-        strArray[i] = 'x'
-    }
-    return strArray.join('')
+  let strArray = str.split("");
+  for (let i = n - 1; i < str.length; i += n) {
+    strArray[i] = "x";
+  }
+  return strArray.join("");
 }
 
-console.log(weave('hi how are you', 2)) // returns 'hx xox xrx xox'
-console.log(weave('im terrible, go away', 5)) // returns 'im txrribxe, gx awax'
+console.log(weave("hi how are you", 2)); // returns 'hx xox xrx xox'
+console.log(weave("im terrible, go away", 5)); // returns 'im txrribxe, gx awax'
 
