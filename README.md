@@ -80,11 +80,16 @@ longestWord('fool me once, shame on me. fool me twice, shame on heathcliff'); //
 
 ## `08 | weave`
 
-Write a function called `weave` that accepts an input string and number. The function should return the string with every xth character replaced with an 'x'.
+Write a function called `weave` that accepts an input string, `str`, and a number, 'n'. The function should return the string with every nth character replaced with an 'x'.
 
-## `09 | bonus`
+```js
+weave('hi how are you', 2) // returns 'hx xox xrx xox'
+weave('im terrible, go away', 5) // returns 'im txrribxe, gx awax'
+```
 
-Jeb eats out at restaurants all the time but is horrible at math. He decides to write a function called `bonus` that accepts a single parameter (the cost of the meal), and should return the tip Jeb should give his waiter. Jeb uses two rules to calculate tips:
+## `09 | tip`
+
+Jeb eats out at restaurants all the time but is horrible at math. He decides to write a function called `tip` that accepts a single parameter (the cost of the meal), and should return the tip Jeb should give his waiter. Jeb uses two rules to calculate tips:
 
 - First he always tips 20% on the original bill.
 - He then rounds up to the nearest dollar. For example, if the total with tip is $22.78, he'd round up to $23.00.
