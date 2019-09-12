@@ -1,8 +1,8 @@
-- Create a directory with an index.html file and a main.js file. 
-- Add the boilerplate html5 to the index.html file. 
-- Link the main.js file to your index.htlm with a script tag.
-- Write the following functions in the main.js file
-- Use console.log() to display the results
+- Create a directory with an `index.html` file and a `main.js` file. 
+- Add the boilerplate html5 to the `index.html` file. 
+- Link the main.js file to your `index.html` with a script tag.
+- Write the following functions in the `main.js` file
+- Use `console.log()` to display the results
 
 ## `01 | sum`
 
