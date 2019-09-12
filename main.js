@@ -27,3 +27,38 @@ function secondLargest(arr){
 
 console.log(secondLargest([1, 4, 5, 8])); // returns 5
 console.log(secondLargest([8, 3, 5, 1, 9, 10])); // returns 9
+
+function containsVowel(word){
+    let vowels = ['a','e','i','o','u']
+    for(let i = 0; i < vowels.length; i++){
+        if(word.includes(vowels[i])){
+            return true
+        } 
+    }
+    return false
+}
+
+console.log(containsVowel('alpha')); // returns true
+console.log(containsVowel('hmph')); // returns false
+
+function piglatin(str){
+    let wordArray = str.split(' ')
+    for(let i = 0; i < wordArray.length; i++){
+        let firstLetter = wordArray[i][0]
+        let remainingLetters = wordArray[i].slice(1)
+        let pigWord = remainingLetters+firstLetter+'ay'
+        wordArray[i] = pigWord
+    }
+    return wordArray.join(' ')
+}
+
+console.log(piglatin('good day')); // returns 'oodgay ayday'
+console.log(piglatin('come now')); // returns 'omecay ownay'
+
+function longestWord(str){
+    let wordArray = str.split(' ')
+    return wordArray.sort(function(a,b){return b.length - a.length})[0]
+}
+
+console.log(longestWord('have you ever seen a penguin go to tea?')); // returns 'penguin'
+console.log(longestWord('fool me once, shame on me. fool me twice, shame on heathcliff')); // returns 'heathcliff'
