@@ -146,7 +146,7 @@ console.log(divisors(92)) // returns [1, 2, 4, 23, 46, 92]
 
 function hamming(str1,str2){
   if(str1.length !== str2.length){
-    return 0
+    return false
   } else {
     let sameLetterCount = 0
     for(let i =0; i < str1.length; i++){

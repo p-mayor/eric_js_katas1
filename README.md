@@ -133,13 +133,13 @@ divisors(92) // returns [1, 2, 4, 23, 46, 92]
 
 ## `13 | hamming`
 
-Write a function called `hamming` that accepts two strings. If the lengths of the strings are not equal, the function should return zero. Otherwise, return the number of letters that are in the same position in both words.
+Write a function called `hamming` that accepts two strings. If the lengths of the strings are not equal, the function should return `false`. Otherwise, return the number of letters that are in the same position in both words.
 
 ```js
 hamming('yatin','thang') // returns 0
 hamming('hello','hello') // returns 5
 hamming('hello','hewwo') // returns 3
-hamming('hello','helloo') // returns 0
+hamming('hello','helloo') // returns false
 ```
 
 ## `14 | pokemon`
